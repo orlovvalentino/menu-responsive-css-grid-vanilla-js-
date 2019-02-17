@@ -1,0 +1,41 @@
+ul{
+  list-style: none;
+}
+li a {
+  background: #cc2649;
+  color: #fff;
+  margin: 0;
+  display: block;
+  padding: 10px 14px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+}
+.show-more a {
+  background: green;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-flow: row dense;
+  height: 43px;
+}
+.grid .separator ~ *{
+  grid-column-start: -1;
+  grid-column-end: -2;
+  display: none;
+}
+
+.grid .show-more {
+  grid-column-start: -1;
+  grid-column-end: -2;
+}
+
+.grid .show-more.active ~ * {
+  display: initial;
+}
+
+
+
