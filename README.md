@@ -1,3 +1,7 @@
+Responsive menu
+====
+Simple responsive menu on css grid + JS
+
 Demo
 ====
 
